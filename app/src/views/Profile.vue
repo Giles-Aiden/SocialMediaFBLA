@@ -11,6 +11,45 @@
           <ion-col>
             <ion-avatar id='profile_pic'>
               <img src="https://image.freepik.com/free-icon/profile-user-outline_318-36611.png">
+              <ion-grid>
+
+                <ion-row>
+                  <ion-col>
+                    <div><h1>Area 2</h1></div>
+
+                     <ion-card>
+                      <ion-card-header>
+                        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                        <ion-card-title>Card Title</ion-card-title>
+                      </ion-card-header>
+
+                      <ion-card-content>
+                        Keep close to Nature's heart... and break clear away, once in awhile,
+                        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                      </ion-card-content>
+                    </ion-card>
+
+                  </ion-col>
+                  <ion-col>
+
+                    <div><h1>education information</h1></div>
+
+
+                     <ion-card>
+                      <ion-card-header>
+                        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                        <ion-card-title>Card Title</ion-card-title>
+                      </ion-card-header>
+
+                      <ion-card-content>
+                        Keep close to Nature's heart... and break clear away, once in awhile,
+                        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                      </ion-card-content>
+                    </ion-card>
+                  </ion-col>
+                </ion-row>
+
+              </ion-grid>
             </ion-avatar>
           </ion-col>
         </ion-row>
