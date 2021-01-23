@@ -48,7 +48,13 @@
                     </ion-card>
                   </ion-col>
                 </ion-row>
-
+                <ion-row>
+                  <ion-col>
+                    <ion-fab-button>
+                      <ion-icon icon={add}>
+                    </ion-fab-button>
+                  </ion-col>
+                </ion-row>
               </ion-grid>
             </ion-avatar>
           </ion-col>
@@ -61,11 +67,11 @@
 <!--  ------------------------ -->
 
 <script>
-import { IonPage, IonAvatar, IonGrid, IonRow, IonCol, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+import { IonPage, IonAvatar, IonGrid, IonRow, IonCol, IonHeader, IonToolbar, IonTitle, IonContent, IonFabButton} from '@ionic/vue';
 
 export default  {
   name: 'Profile',
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonGrid, IonRow, IonCol, IonAvatar, IonPage }
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonGrid, IonRow, IonCol, IonAvatar, IonPage, IonFabButton }
 }
 </script>
 
