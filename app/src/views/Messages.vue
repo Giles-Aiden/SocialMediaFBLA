@@ -12,17 +12,17 @@
         </ion-toolbar>
       </ion-header>
 
-      <ExploreContainer name="Messages" />
+      <UserPost uinfo='KillerHawk' title='test title' body='test body' imgUrl='http://23.239.7.137:42069/nodejs-png-nodejs-icon-png-50-px-1600.png' />
     </ion-content>
   </ion-page>
 </template>
 
 <script>
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+import UserPost from '@/components/Post.vue';
 
 export default  {
   name: 'Tab3',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, UserPost }
 }
 </script>
