@@ -15,7 +15,7 @@
 
                 <ion-row>
                   <ion-col>
-                    <div><h1>Area 2</h1></div>
+                    <div><h1>Career Field</h1></div>
 
                      <ion-card>
                       <ion-card-header>
