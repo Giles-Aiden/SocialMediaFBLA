@@ -15,12 +15,12 @@
 
                 <ion-row>
                   <ion-col>
-                    <div><h1>Area 2</h1></div>
+                    <div><h1>Career Field</h1></div>
 
                      <ion-card>
                       <ion-card-header>
-                        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                        <ion-card-title>Card Title</ion-card-title>
+                        <ion-card-title>Jobs: current and previous</ion-card-title>
+                        <ion-card-subtitle>*include current interests*</ion-card-subtitle>
                       </ion-card-header>
 
                       <ion-card-content>
@@ -28,17 +28,21 @@
                         and climb a mountain or spend a week in the woods. Wash your spirit clean.
                       </ion-card-content>
                     </ion-card>
-
+                  <ion-fab>
+                    <ion-fab-button>
+                      <ion-icon>
+                    </ion-fab-button>
+                  </ion-fab>
                   </ion-col>
                   <ion-col>
 
-                    <div><h1>education information</h1></div>
+                    <div><h1>Qualifications</h1></div>
 
 
                      <ion-card>
                       <ion-card-header>
-                        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                        <ion-card-title>Card Title</ion-card-title>
+                        <ion-card-title>Education</ion-card-title>
+                        <ion-card-subtitle>*include certifications*</ion-card-subtitle>
                       </ion-card-header>
 
                       <ion-card-content>
