@@ -33,6 +33,9 @@
   </div>
 </template>
 
+-----------
+
+
 <script lang="ts">
 import Vue from 'vue';
 
@@ -42,7 +45,17 @@ export default Vue.extend({
     msg: String,
   },
 });
+
+/*
+* import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src 
+* 
+* components: {
+*   Card,
+* },
+*/
 </script>
+
+-----------
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
