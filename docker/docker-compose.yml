@@ -1,0 +1,44 @@
+version: '3'
+services:
+  client:
+    image: 'cac-app'
+    container_name: 'cac-app'
+    stdin_open: true
+    ports: 
+      - '8080:3000'
+    networks: 
+      - cac-app
+
+  server:
+    image: 'cac-server'
+    container_name: 'cac-server'
+    ports: 
+      - '7852:3000'
+    networks: 
+      - cac-app
+      - cac-db
+    depends_on: 
+      - database
+  database:
+    image: 'mongo'
+    container_name: 'cac-database'
+    environment:
+      - MONGO_INITDB_DATABASE=CaCDB
+      - MONGO_INITDB_ROOT_USERNAME=CaCR
+      - MONGO_INITDB_ROOT_PASSWORD=Secret
+    volumes:
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js
+      - cac-db-data:/data/db
+    ports: 
+      - '27017-27019:27017-27019'
+    networks: 
+      - cac-db
+
+networks:
+  cac-app:
+    driver: bridge
+  cac-db:
+    driver: bridge
+volumes:
+  cac-db-data:
+    driver: local
