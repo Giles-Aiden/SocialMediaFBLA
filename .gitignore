@@ -1,0 +1,7 @@
+app/dist
+app/node_modules
+docker/cac-db/*
+docker/builds/app/dist
+docker/builds/app/node_modules
+server/node_modules
+

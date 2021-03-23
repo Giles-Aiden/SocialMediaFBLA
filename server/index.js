@@ -25,11 +25,15 @@ app.get('/', (req, res) => {
   res.send("<h1>CaC Server</h1>");
 });
 
-app.get('/users', (req, res) => {
+app.get('/api/users', (req, res) => {
   res.json(users);
 });
 
-app.post('/users', async (req, res) => {
+app.get('/api/users/:name', (req, res) => {
+  res.json({ "name" : req.params.name });
+});
+
+app.post('/api/users', async (req, res) => {
   try {
     const salt = await bcrypt.genSalt();
     const hashedPassword = await bcrypt.hash(req.body.password, salt);
@@ -42,7 +46,7 @@ app.post('/users', async (req, res) => {
   }
 });
 
-app.post('/users/login', async (req, res) => {
+app.post('/api/users/login', async (req, res) => {
   const user = users.find((user) => (user.name = req.body.name));
   console.log(user);
   if (user == null) return res.status(400).send("Coundn't find user");
@@ -53,5 +57,6 @@ app.post('/users/login', async (req, res) => {
   } catch {
     res.status(500).send();
   }
+});
 
 app.listen(3000);

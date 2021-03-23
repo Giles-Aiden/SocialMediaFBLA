@@ -28,7 +28,7 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=Secret
     volumes:
       - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js
-      - cac-db-data:/data/db
+      - cac-db:/data/db
     ports: 
       - '27017-27019:27017-27019'
     networks: 
@@ -40,5 +40,9 @@ networks:
   cac-db:
     driver: bridge
 volumes:
-  cac-db-data:
+  cac-db:
     driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./cac-db
