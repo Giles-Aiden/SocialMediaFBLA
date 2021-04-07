@@ -1,17 +1,16 @@
 <template>
   <div class='center grid'>
-  <hr>
     <vs-row justify='center'>
         <vs-card type="5">
           <template #title>
-            <h3>Alex Weber</h3>
+            <h3>Alex Weber</h3><p>@AlexWeberCode</p>
           </template>
           <template #img>
             <img src="https://thispersondoesnotexist.com/image" alt="">
           </template>
           <template #text>
             <p>
-              Hey man! Long time no see!
+              Hey just took a look at your wireframe! Looks great.
             </p>
           </template>
           <template #interactions>
