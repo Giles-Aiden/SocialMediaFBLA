@@ -78,8 +78,14 @@
                             </p>
                         </template>
                         <template #interactions>
-                            <vs-button danger icon>
-                                <i class='bx bx-heart'></i>
+                            <vs-button
+                                icon
+                                color="danger"
+                                border
+                                :active="active == 2"
+                                @click="active = 2"
+                            >
+                                <i class='bx bxs-heart' ></i>
                             </vs-button>
                             <vs-button class="btn-chat" shadow primary>
                                 <i class='bx bx-chat' ></i>
@@ -148,7 +154,8 @@
 <script>
     export default {
         data:() => ({
-        hidden: true
+        hidden: true,
+        active: 0
     })
     }
 </script>
